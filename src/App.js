@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="main-container">
       <header className="header">
-      <h1>React Calculator</h1>
+        <h1>React Calculator</h1>
       </header>
     </div>
   );
