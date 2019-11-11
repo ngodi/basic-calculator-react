@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import './App.css';
 
 const Display = ({ result }) => (
-  <div>
-    <div className="result">{ result }</div>
-  </div>
+
+  <div className="result">{ result }</div>
+
 );
 
 Display.defaultProps = { result: '0' };
