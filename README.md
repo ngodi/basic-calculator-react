@@ -28,6 +28,6 @@ Ngodi Albert
 
 ### live view
 
-[coming soon](#)
+[See demo](https://react-calc-ngodi.herokuapp.com/)
 
 ### User guide
