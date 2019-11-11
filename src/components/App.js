@@ -1,19 +1,22 @@
 import React from 'react';
 import './App.css';
 import Display from './Display';
-import Button from './Button';
+import ButtonPanel from './ButtonPanel';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      input: '',
+    };
   }
 
   render() {
     return (
       <div>
         <Header />
-        <Display result="0" />
-        <Button name="1" />
+        <Display result="result" />
+        <ButtonPanel />
       </div>
     );
   }
