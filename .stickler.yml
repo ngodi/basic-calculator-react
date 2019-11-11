@@ -9,3 +9,5 @@ files:
         - 'no-unused-expressions'
         - 'box-model'
         - 'src/serviceWorker.js'
+        - 'no-unused-vars'
+        - 'no-undef'
