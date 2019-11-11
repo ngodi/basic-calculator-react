@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Button = (props) => {
-  return (
-    <div>
-      <button type="button">{props.name}</button>
-    </div>
-  );
-};
+const Button = ({ name }) => (
+  <div>
+    <button type="button">{name}</button>
+  </div>
+);
+
+Button.propTypes = { name: PropTypes.string.isRequired };
 export default Button;
