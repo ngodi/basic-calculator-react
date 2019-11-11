@@ -6,4 +6,10 @@ margin: 0 auto;
 .header {
 padding:20px;
 }
+.result{
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: right;
+}
 

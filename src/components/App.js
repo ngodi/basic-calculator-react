@@ -3,19 +3,18 @@ import './App.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends React.Component {
+  // eslint-disable-next-line no-useless-constructor
   constructor(props) {
     super(props);
-    this.state = {
-      input: '',
-    };
   }
 
   render() {
     return (
-      <div>
+      <div className="main-container">
         <Header />
-        <Display result="result" />
+        <Display />
         <ButtonPanel />
       </div>
     );
