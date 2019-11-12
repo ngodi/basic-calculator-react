@@ -1,4 +1,6 @@
-function calculate ({ total, next, operation }, buttonName){
+import operate from './operate.js';
+
+const calculate = ({ total, next, operation }, buttonName) => {
 
     const OPERATIONS = ['+','-','/','x','%','+/-']
     if(OPERATIONS.includes(buttonName)){
