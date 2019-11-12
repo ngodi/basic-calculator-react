@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import './App.css';
 import Display from './Display';
@@ -22,6 +23,7 @@ class App extends React.Component {
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 const Header = () => (
   <div className="header">
     <h1>React Calculator</h1>
