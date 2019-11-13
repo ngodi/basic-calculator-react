@@ -10,6 +10,11 @@ class App extends React.Component {
   // eslint-disable-next-line no-useless-constructor
   constructor(props) {
     super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null
+    }
   }
 
   render() {
