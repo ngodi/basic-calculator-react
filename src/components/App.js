@@ -15,19 +15,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="main-container">
-        <Header />
+        <h1>React Calculator</h1>
         <Display />
         <ButtonPanel />
       </div>
     );
   }
 }
-
-// eslint-disable-next-line no-unused-vars
-const Header = () => (
-  <div className="header">
-    <h1>React Calculator</h1>
-  </div>
-);
 
 export default App;
