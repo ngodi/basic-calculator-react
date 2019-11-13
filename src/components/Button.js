@@ -1,19 +1,28 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
 
-const Button = ({ name, wide, color }) => (
-  <div>
-    <button className={wide ? 'wide' : 'btn'} style={{ background: color }} type="button">{name}</button>
+export default class Button extends React.Component {
+  static propTypes = {
+    name: PropTypes.string,
+    color: PropTypes.bool,
+    wide: PropTypes.bool,
+    clickHandler: PropTypes.func,
+  };
+static defaultProps = { color: 'orange', wide: false };
+  
+handleClick = () => {
+    this.props.clickHandler(this.props.name);
+  };
+
+render() {
+return (
+   <div>
+    <button onClick={this.handleClick }  className={this.props.wide ? 'wide' : 'btn'} style={{ background: this.props.color }} type="button">{this.props.name}</button>
   </div>
-);
-
-Button.propTypes = {
-  name: PropTypes.string.isRequired,
-  color: PropTypes.string,
-  wide: PropTypes.bool,
+ );
+ }
 };
-Button.defaultProps = { color: 'orange', wide: false };
 
-export default Button;
+
+
