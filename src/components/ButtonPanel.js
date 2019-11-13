@@ -3,36 +3,36 @@ import React from 'react';
 import Button from './Button';
 import './App.css';
 
-const ButtonPanel = () => (
+const ButtonPanel = ( clickHandler ) => (
   <div className="calculator">
     <div className="row">
-      <Button name="AC" color />
-      <Button name="+/-" color />
-      <Button name="%" color />
-      <Button name="÷" />
+      <Button name="AC" color clickHandler={ clickHandler }/>
+      <Button name="+/-" color clickHandler={ clickHandler }/>
+      <Button name="%" color clickHandler={ clickHandler }/>
+      <Button name="÷" clickHandler={ clickHandler }/>
     </div>
     <div className="row">
-      <Button name="7" color />
-      <Button name="8" color />
-      <Button name="9" color />
-      <Button name="X" />
+      <Button name="7" color clickHandler={ clickHandler }/>
+      <Button name="8" color clickHandler={ clickHandler }/>
+      <Button name="9" color clickHandler={ clickHandler }/>
+      <Button name="X" clickHandler={ clickHandler }/>
     </div>
     <div className="row">
-      <Button name="4" color />
-      <Button name="5" color />
-      <Button name="6" color />
-      <Button name="-" />
+      <Button name="4" color clickHandler={ clickHandler }/>
+      <Button name="5" color clickHandler={ clickHandler }/>
+      <Button name="6" color clickHandler={ clickHandler }/>
+      <Button name="-" clickHandler={ clickHandler }/>
     </div>
     <div className="row">
-      <Button name="1" color />
-      <Button name="2" color />
-      <Button name="3" color />
-      <Button name="+" />
+      <Button name="1" color clickHandler={ clickHandler }/>
+      <Button name="2" color clickHandler={ clickHandler }/>
+      <Button name="3" color clickHandler={ clickHandler }/>
+      <Button name="+" clickHandler={ clickHandler }/>
     </div>
     <div className="row">
-      <Button name="0" color wide />
-      <Button name="." color />
-      <Button name="=" />
+      <Button name="0" color wide clickHandler={ clickHandler }/>
+      <Button name="." color clickHandler={ clickHandler }/>
+      <Button name="=" clickHandler={ clickHandler }/>
     </div>
   </div>
 );

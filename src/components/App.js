@@ -24,7 +24,7 @@ this.setState( prev => calculate(prev, buttonName) );
     return (
       <div className="main-container">
         <Header />
-        <Display result={this.state.total}/>
+        <Display result={this.state.next}/>
         <ButtonPanel clickHandler={this.handleClick}/>
       </div>
     );

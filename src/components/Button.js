@@ -3,9 +3,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
 
-const Button = ({ name, wide, color }) => (
+const Button = ({ name, wide, color, clickHandler }) => (
   <div>
-    <button className={wide ? 'wide' : 'btn'} style={{ background: color }} type="button">{name}</button>
+    <button className={wide ? 'wide' : 'btn'} style={{ background: color }} type="button" onClick={ clickHandler(name) }>{name}</button>
   </div>
 );
 
