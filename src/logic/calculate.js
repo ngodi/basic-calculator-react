@@ -26,6 +26,12 @@ const calculate = ({ total, next, operation }, buttonName) => {
         next,
         operation
       }
+    }else{
+      return{
+        total,
+        next,
+        operation
+      }
     }
   };
 export default calculate;
