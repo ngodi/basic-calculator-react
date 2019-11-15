@@ -6,15 +6,19 @@ import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
 export default class App extends React.Component {
-  state = {
+  constructor(props){
+    super(props); 
+      this.state = {
     total: null,
     next: null,
     operation: null,
   };
+  }
+ 
 
-  handleClick = buttonName => {
+  handleClick(buttonName){
     this.setState(calculate(this.state, buttonName));
-  };
+  }
 
   render() {
     return (

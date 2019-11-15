@@ -6,13 +6,17 @@ import './App.css';
 
 
 export default class ButtonPanel extends React.Component {
-  static propTypes = {
+  constructor(props){
+    super(props);
+    Button.propTypes = {
     clickHandler: PropTypes.func,
   };
+  }
+  
 
-  handleClick = buttonName => {
+  handleClick(buttonName){
     this.props.clickHandler(buttonName);
-  };
+  }
   render() {
     return (
   <div className="calculator">
@@ -48,4 +52,4 @@ export default class ButtonPanel extends React.Component {
   </div>
     );
 }
-};
+}
