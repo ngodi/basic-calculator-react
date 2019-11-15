@@ -1,6 +1,6 @@
-import Big from "big.js";
 import operate from "./operate";
 import isNumber from "./isNumber";
+import Big from "big.js";
 
 
 export default function calculate(obj, buttonName) {
@@ -103,5 +103,5 @@ export default function calculate(obj, buttonName) {
     total: obj.next,
     next: null,
     operation: buttonName,
-  };
+  }
 }
