@@ -26,7 +26,7 @@ export default class ButtonPanel extends React.Component {
       <Button name="7" color='lightgray' clickHandler= {this.handleClick } />
       <Button name="8" color='lightgray' clickHandler= {this.handleClick } />
       <Button name="9" color='lightgray' clickHandler= {this.handleClick } />
-      <Button name="X" clickHandler= {this.handleClick } />
+      <Button name="x" clickHandler= {this.handleClick } />
     </div>
     <div className="row">
       <Button name="4" color='lightgray' clickHandler= { this.handleClick } />
@@ -47,5 +47,5 @@ export default class ButtonPanel extends React.Component {
     </div>
   </div>
     );
-};
+}
 };

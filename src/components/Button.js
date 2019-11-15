@@ -5,7 +5,7 @@ import './App.css';
 export default class Button extends React.Component {
   static propTypes = {
     name: PropTypes.string,
-    color: PropTypes.bool,
+    color: PropTypes.string,
     wide: PropTypes.bool,
     clickHandler: PropTypes.func,
   };
