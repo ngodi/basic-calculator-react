@@ -13,6 +13,6 @@ files:
         - 'box-model'
         - 'no-unused-vars'
         - 'no-undef'
-        - 'unexpected token ='
+        - 'Parsing error: Unexpected token ='
 
  
