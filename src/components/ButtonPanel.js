@@ -1,39 +1,51 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import Button from './Button';
+import PropTypes from 'prop-types';
 import './App.css';
 
-const ButtonPanel = () => (
+
+export default class ButtonPanel extends React.Component {
+  static propTypes = {
+    clickHandler: PropTypes.func,
+  };
+
+  handleClick = buttonName => {
+    this.props.clickHandler(buttonName);
+  };
+  render() {
+    return (
   <div className="calculator">
     <div className="row">
-      <Button name="AC" color />
-      <Button name="+/-" color />
-      <Button name="%" color />
-      <Button name="÷" />
+      <Button name="AC" color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="+/-" color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="%" color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="÷" clickHandler= {this.handleClick } />
     </div>
     <div className="row">
-      <Button name="7" color />
-      <Button name="8" color />
-      <Button name="9" color />
-      <Button name="X" />
+      <Button name="7" color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="8" color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="9" color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="x" clickHandler= {this.handleClick } />
     </div>
     <div className="row">
-      <Button name="4" color />
-      <Button name="5" color />
-      <Button name="6" color />
-      <Button name="-" />
+      <Button name="4" color='lightgray' clickHandler= { this.handleClick } />
+      <Button name="5" color='lightgray' clickHandler = { this.handleClick } />
+      <Button name="6" color='lightgray' clickHandler = { this.handleClick } />
+      <Button name="-" clickHandler= {this.handleClick } />
     </div>
     <div className="row">
-      <Button name="1" color />
-      <Button name="2" color />
-      <Button name="3" color />
-      <Button name="+" />
+      <Button name="1" color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="2" color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="3" color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="+" clickHandler= {this.handleClick } />
     </div>
     <div className="row">
-      <Button name="0" color wide />
-      <Button name="." color />
-      <Button name="=" />
+      <Button name="0" color='lightgray' wide clickHandler= {this.handleClick } />
+      <Button name="." color='lightgray' clickHandler= {this.handleClick } />
+      <Button name="=" clickHandler= {this.handleClick } />
     </div>
   </div>
-);
-export default ButtonPanel;
+    );
+}
+}
