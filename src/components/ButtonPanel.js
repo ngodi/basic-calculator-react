@@ -48,4 +48,4 @@ export default class ButtonPanel extends React.Component {
   </div>
     );
 }
-};
+}
